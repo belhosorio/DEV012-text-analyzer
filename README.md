@@ -759,3 +759,22 @@ en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
 [read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
 También tendrás que ajustar las pruebas ya existentes de las
 funcionalidades requeridas.
+
+------------------------------------------------------------
+
+
+El proyecto se comenzo identificando las distintas actividades que se debian realizar, para ello se creo un Planning del proyecto en el sitio web https://trello.com/ . De esta forma se separo las distintas actividades en otras mas pequeñas para ir poco a poco completandolas sin olvidar ninguna.
+
+<img src="./Planning Text Analyzer.jpg" />
+*Planning del proyecto en el Sprint final.
+
+Ademas se creo un prototipo con el fin de identificar el interfaz visual del proyecto que fuera lo mas amigable, legible y entendible para el usuario del proyecto, para que asi la funcionalidad del proyecto no se viera afectada.
+
+
+<img src="./Prototipo text analyzer.jpg" />
+*Prototipo del Analizador de Texto.
+
+Con todo esto se realizo el codigo del proyecto en Visual Studio Code, siguiendo cada una de las especificaciones requeridas del proyecto.
+
+<img src="./codigo.jpg" />
+*Codigos en Visual Studio Code.
