@@ -1,0 +1,47 @@
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: sans-serif;
+    text-align: center;
+}
+header {
+   text-align: center; 
+   color: white;
+   margin: 30px auto;
+}
+footer {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    
+    text-align: center; 
+    width: auto;
+}
+.lista {
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FDFEFE;
+    display: block;
+}
+textarea[name="user-input"]{
+    background-color:white;
+}
+textarea:blank {
+    border: 3px solid;
+}
+#reset-button{
+    background-color: aquamarine;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+}   
+#reset-button:active{
+    background-color:darkturquoise;
+}
