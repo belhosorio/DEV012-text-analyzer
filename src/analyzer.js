@@ -16,7 +16,7 @@ const analyzer = {
   },
   //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`: no toma(elimina) los signos especiales y espacios
   getNumberCount: (text) => {
-    const regex = /[0-9]/g;
+    const regex = /\b\d+(\.\d+)?\b/g;
     const count = text.match(regex);
     if (count) {
       return count.length;
@@ -24,12 +24,12 @@ const analyzer = {
   },
   //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`: identifica solo los numeros. retorna cuantos numeros hay. y si no hay numeros retorna cero
   getNumberSum: (text) => {
-    const regex = /[0-9]/g;
+    const regex = /\b\d+(\.\d+)?\b/g;
     const numberCount = text.match(regex);
     let summ = 0;
     if (numberCount) {
       for (let i = 0; i < numberCount.length; i++) {
-        summ = summ + parseFloat(numberCount[i]);
+        summ += parseFloat(numberCount[i]);
       }
       return summ;
     } else return 0;
@@ -43,7 +43,7 @@ const analyzer = {
         summLength = summLength + lengthWords[i].length;
       }
       const lengthAverage = summLength / lengthWords.length;
-      return parseFloat(lengthAverage.toFixed(3));
+      return parseFloat(lengthAverage.toFixed(2));
     } else lengthWords.length === 0;
     return 0;
   },
